@@ -2,4 +2,28 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  text-align: center;
+}
+
+.inputBox {
+  width: 50%;
+  text-align: center;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  color: red;
+}
+.inputBox::placeholder {
+  color: red;
+  opacity: .8;
+}
+.candidateArea {
+  border: 1px solid blue;
+  width: 235px;
+  border-radius: 25px;
+  float: left;
+  height: 250px;
+  text-align: center;
+  margin-left: 15px;
+  color: red;
+  margin-top: 15px;
 }
