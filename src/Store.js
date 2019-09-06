@@ -1,7 +1,7 @@
 import {createStore} from 'redux';
 const InitialState = {
   "xlsData": [],
-  "keys": [],
+  // "keys": [],
   "keyData": {}
 }
 
@@ -10,8 +10,8 @@ function rootReducer(state =InitialState, action) {
     case 'setXlsData':
       state = {...state, 'xlsData' : action.value}
       break;
-    case 'setKeys':
-      state = {...state, 'keys': action.value}
+    case 'changeKeyData':
+      state = { ...state, 'keyData': action.value};
       break;
     case 'setKeyData':
       state = {...state, 'keyData': action.value}
